@@ -1,0 +1,29 @@
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-icon {
+    color: #aaa;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav-icon img {
+    max-width: 35px;
+    height: auto;
+}
+
+.nav-icon:hover {
+    color: #fff;
+}
