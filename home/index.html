@@ -16,7 +16,7 @@
             <iframe src="../topbar/index.html" style="border: none; width: 100%; height: 80px;"></iframe>
 
             <div class="search-bar">
-                <input type="text" placeholder="Procurar Eventos, Produtos, Organizações...">
+                <input id="searchInput" type="text" placeholder="Procurar Eventos, Produtos, Organizações...">
             </div>
             <div class="location">
                 <img src="../icons/icon_location.png" alt="Localização">
@@ -73,3 +73,17 @@
 </body>
 
 </html>
+
+<script>
+    var input = document.getElementById("searchInput");
+
+    input.addEventListener("keypress", function (event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+            // Cancel the default action, if needed
+            event.preventDefault();
+
+            window.location.href = "../search/index.html";
+        }
+    });
+</script>
