@@ -10,55 +10,60 @@
 <body>
     <div class="container">
         <header>
-            <!-- Barra de Navegação Superior -->
-            <iframe src="../topbar/index.html" style="border: none; width: 100%; height: 80px;"></iframe>
-
-            <div class="search-bar">
-                <input type="text" placeholder="Procurar Eventos, Produtos, Organizações...">
-            </div>
-            <div class="location">
-                <img src="../icons/icon_location.png" alt="Localização">
-                <span>Usar sua localização</span>
-            </div>
-            <div class="tabs">
-                <button class="tab active">Eventos</button>
-                <button class="tab">Produtos</button>
-                <button class="tab">Organizações</button>
-            </div>
+            <a href="#" class="back-arrow" onclick="window.parent.location.href='../home/index.html'">←</a>
+            <h1>Detalhes da compra</h1>
         </header>
 
-        <main>
-            <div class="event">
-                <div class="event-image" style="background-image: url('isoporzinho.jpg');"></div>
-                <div class="event-details">
-                    <p class="event-date">28 de Nov</p>
-                    <h3 class="event-title">Isoporzinho dos bichos</h3>
-                    <p class="event-location">Niterói/RJ • Águias</p>
-                </div>
-            </div>
+        <div class="tabs">
+            <span class="active">Pagamento</span>
+        </div>
 
-            <div class="event">
-                <div class="event-image" style="background-image: url('casamento.jpg');"></div>
-                <div class="event-details">
-                    <p class="event-date">30 de Nov</p>
-                    <h3 class="event-title">CASAMENTO DA BIO 2024</h3>
-                    <p class="event-location">Campinas/SP • AABU</p>
-                </div>
+        <div class="payment-methods">
+            <h2>Métodos de pagamento</h2>
+            <p class="info">Com pix é mais rápido!</p>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="payment" checked>
+                    <span class="radio-custom"></span>
+                    Pix
+                </label>
+                <label>
+                    <input type="radio" name="payment">
+                    <span class="radio-custom"></span>
+                    Cartão de Crédito
+                </label>
             </div>
+        </div>
 
-            <div class="event">
-                <div class="event-image" style="background-image: url('terraavista.jpg');"></div>
-                <div class="event-details">
-                    <p class="event-date">13 de Dez</p>
-                    <h3 class="event-title">TERRA À VISTA - NOITE DE APOSTAS</h3>
-                    <p class="event-location">São Paulo/SP • AAUU</p>
-                </div>
+        <div class="installments">
+            <h2>Parcelas</h2>
+            <select>
+                <option>Selecione a parcela</option>
+            </select>
+        </div>
+
+        <div class="card-info">
+            <h2>Informações do cartão</h2>
+            <input type="text" placeholder="Número do cartão">
+            <div class="input-group">
+                <input type="text" placeholder="Validade (MM/AA)">
+                <input type="text" placeholder="CVV">
             </div>
-        </main>
+            <label>
+                <input type="checkbox">
+                Salvar esse cartão na conta
+            </label>
+        </div>
 
-        <!-- Barra de Navegação Inferior -->
-        <iframe src="../navbar/index.html" style="border: none; width: 100%;"></iframe>
+        <div class="card-holder">
+            <h2>Titular do Cartão</h2>
+            <p>Utilizamos o nome, CPF, data de nascimento...</p>
+            <a href="#" class="revisar">Revisar</a>
+        </div>
+
+        <button class="finalizar-btn">Finalizar Compra</button>
     </div>
+</body>
 </body>
 
 </html>

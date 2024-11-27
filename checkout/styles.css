@@ -28,115 +28,122 @@ header {
     margin: 20px;
 }
 
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.payment-methods input[type="radio"] {
+    display: none;
 }
 
-.top-bar .time {
-    font-size: 14px;
+.back-arrow {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
 }
 
-.top-bar .icons i {
-    margin-left: 8px;
-}
-
-.search-bar {
-    margin: 16px 0;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #444;
-    border-radius: 8px;
-    background-color: #121212;
-    color: #fff;
-}
-
-.search-bar i {
-    margin-left: 10px;
+h1 {
+    font-size: 22px;
 }
 
 .tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
-.tabs .tab {
-    background: none;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
+.tabs span {
+    margin-right: 20px;
+    opacity: 0.6;
 }
 
 .tabs .active {
-    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    opacity: 1;
+    border-bottom: 2px solid white;
 }
 
-.location {
+.payment-methods h2,
+.installments h2,
+.card-info h2,
+.card-holder h2 {
+    font-size: 18px;
+}
+
+.info {
+    color: #00ff00;
+}
+
+.radio-group {
     display: flex;
-    padding: 30px;
-    font-size: 14px;
-    margin-bottom: 16px;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
 }
 
-.location img {
-    width: 40px;
+.radio-custom {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-main {
-    flex: 1;
-    overflow-y: auto;
+.radio-group input[type="radio"]:checked+.radio-custom {
+    background-color: #00ff00;
 }
 
-.event {
-    display: flex;
-    padding: 15px;
-    border-bottom: 1px solid #333;
-}
-
-.event-image {
-    width: 60px;
-    height: 60px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    margin-right: 15px;
-}
-
-.event-details .event-date {
-    color: red;
-    font-size: 12px;
-}
-
-.event-details .event-title {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.event-details .event-location {
-    font-size: 12px;
-    color: #888;
-}
-
-footer {
-    background: #111;
+.installments select,
+.card-info input {
+    width: 100%;
     padding: 10px;
+    margin: 5px 0;
+    background-color: #1e1e1e;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
 }
 
-.bottom-nav {
+.input-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.bottom-nav i {
-    font-size: 20px;
+.input-group input {
+    width: 48%;
+}
+
+.card-info label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-info input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.card-holder p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.revisar {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.finalizar-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
     cursor: pointer;
+    font-size: 16px;
 }
