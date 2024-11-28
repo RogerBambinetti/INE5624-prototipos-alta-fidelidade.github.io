@@ -21,9 +21,9 @@
                 <span>Florianópolis, SC</span>
             </div>
             <div class="tabs">
-                <button class="tab active">Eventos</button>
-                <button class="tab">Produtos</button>
-                <button class="tab">Organizações</button>
+                <button class="tab active" onclick="setActiveTab(this)">Eventos</button>
+                <button class="tab" onclick="setActiveTab(this)">Produtos</button>
+                <button class="tab" onclick="setActiveTab(this)">Organizações</button>
             </div>
         </header>
 
@@ -63,3 +63,13 @@
 </body>
 
 </html>
+
+<script>
+    function setActiveTab(button) {
+        var tabs = document.querySelectorAll('.tab');
+        tabs.forEach(function (tab) {
+            tab.classList.remove('active');
+        });
+        button.classList.add('active');
+    }
+</script>
