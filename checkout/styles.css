@@ -12,7 +12,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
 }
 
@@ -25,7 +24,6 @@ header {
     max-width: 380px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding: 0px 20px;
 }
 
@@ -142,6 +140,7 @@ h1 {
     border: none;
     border-radius: 5px;
     margin-top: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
     font-size: 16px;
 }
