@@ -1,0 +1,149 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px 20px;
+}
+
+header {
+    margin: 20px 0;
+}
+
+.payment-methods input[type="radio"] {
+    display: none;
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: white;
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.tabs {
+    margin-bottom: 16px;
+}
+
+.tabs span {
+    margin-right: 20px;
+    opacity: 0.6;
+}
+
+.tabs .active {
+    padding-bottom: 3px;
+    opacity: 1;
+    border-bottom: 2px solid white;
+}
+
+.payment-methods h2,
+.installments h2,
+.card-info h2,
+.card-holder h2 {
+    font-size: 18px;
+}
+
+.info {
+    color: #00ff00;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-custom {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio-group input[type="radio"]:checked+.radio-custom {
+    background-color: #00ff00;
+}
+
+.installments select,
+.card-info input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #1e1e1e;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input {
+    width: 48%;
+}
+
+.card-info label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-info input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.card-holder p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.revisar {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.finalizar-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
