@@ -57,6 +57,7 @@ h1 {
 .card-info h2,
 .card-holder h2 {
     font-size: 18px;
+    margin: 10px 0;
 }
 
 .info {
@@ -153,4 +154,23 @@ h1 {
 
 .details h3 {
     margin-bottom: 15px;
+}
+
+.details .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .highlight {
+    font-weight: bolder;
+    color: white;
+}
+
+.total {
+    margin-top: 10px;
+}
+
+.total .highlight {
+    font-size: large;
 }
