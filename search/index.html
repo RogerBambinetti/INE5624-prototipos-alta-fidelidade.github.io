@@ -71,5 +71,57 @@
             tab.classList.remove('active');
         });
         button.classList.add('active');
+        updateContent(button.innerText);
+    }
+
+    function updateContent(tabName) {
+        var mainContent = document.querySelector('main');
+        mainContent.innerHTML = '';
+
+        if (tabName === 'Eventos') {
+            mainContent.innerHTML = `
+                <div class="event" onclick="window.parent.location.href='../event/index.html'">
+                    <div class="event-image" style="background-image: url('isoporzinho.jpg');"></div>
+                    <div class="event-details">
+                        <p class="event-date">28 de Nov</p>
+                        <h3 class="event-title">Isoporzinho dos bichos</h3>
+                        <p class="event-location">Florianópolis/SC • Life Club</p>
+                    </div>
+                </div>
+                <div class="event" onclick="window.parent.location.href='../event/index.html'">
+                    <div class="event-image" style="background-image: url('casamento.jpg');"></div>
+                    <div class="event-details">
+                        <p class="event-date">30 de Nov</p>
+                        <h3 class="event-title">CASAMENTO DA BIO 2024</h3>
+                        <p class="event-location">Florianópolis/SC • Life Club</p>
+                    </div>
+                </div>
+                <div class="event" onclick="window.parent.location.href='../event/index.html'">
+                    <div class="event-image" style="background-image: url('terraavista.jpg');"></div>
+                    <div class="event-details">
+                        <p class="event-date">13 de Dez</p>
+                        <h3 class="event-title">TERRA À VISTA</h3>
+                        <p class="event-location">Florianópolis/SC • Life Club</p>
+                    </div>
+                </div>
+            `;
+        } else if (tabName === 'Produtos') {
+            mainContent.innerHTML = `
+                <div class="product">
+                    <div class="product-image" style="background-image: url('produto1.jpg');"></div>
+                    <div class="product-details">
+                        <h3 class="product-title">Produto 1</h3>
+                        <p class="product-description">Descrição do Produto 1</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image" style="background-image: url('produto2.jpg');"></div>
+                    <div class="product-details">
+                        <h3 class="product-title">Produto 2</h3>
+                        <p class="product-description">Descrição do Produto 2</p>
+                    </div>
+                </div>
+            `;
+        }
     }
 </script>
