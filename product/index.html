@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra de Navegação Superior -->
+    <iframe src="../backlbar/index.html"
+        style="border: none; width: 100%; height: 65px; position: fixed; top: 0;"></iframe>
+
+    <div class="event-banner">
+        <img src="../images/event-banner.png" />
+    </div>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Copo com tirante</h1>
+            <p>Atlética Crypto | Florianópolis / Santa Catarina</p>
+
+            <div class="buttons">
+                <button class="interest-btn">Tamanhos</button>
+                <button class="share-btn">Cores</button>
+            </div>
+        </header>
+
+        <section class="lots">
+            <h2>Quantidade</h2>
+            <div class="lot-info">
+                <p>R$ 35,00 + taxa de entrega</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="0">
+                    <button>+</button>
+                </div>
+            </div>
+        </section>
+
+        <button class="finalizar-btn" onclick="location.href='../checkout/index.html'">Ir para Checkout</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelectorAll('.quantity button').forEach(button => {
+        button.addEventListener('click', function () {
+            const input = this.parentElement.querySelector('input');
+            let value = parseInt(input.value);
+            if (this.textContent === '+') {
+                value++;
+            } else if (this.textContent === '-' && value > 0) {
+                value--;
+            }
+            input.value = value;
+        });
+    });
+</script>
