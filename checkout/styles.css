@@ -16,6 +16,11 @@ body {
     margin: 0;
 }
 
+header {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
 .container {
     max-width: 380px;
     display: flex;
@@ -24,19 +29,8 @@ body {
     padding: 0px 20px;
 }
 
-header {
-    margin: 20px 0;
-}
-
 .payment-methods input[type="radio"] {
     display: none;
-}
-
-.back-arrow {
-    text-decoration: none;
-    color: white;
-    font-size: 34px;
-    margin-right: 10px;
 }
 
 h1 {
@@ -66,7 +60,7 @@ h1 {
 }
 
 .info {
-    color: #00ff00;
+    color: #5fbd5f;
 }
 
 .radio-group {
@@ -91,7 +85,7 @@ h1 {
 }
 
 .radio-group input[type="radio"]:checked+.radio-custom {
-    background-color: #00ff00;
+    background-color: #5fbd5f;
 }
 
 .installments select,
@@ -128,12 +122,6 @@ h1 {
     margin: 5px 0;
     font-size: 14px;
     opacity: 0.8;
-}
-
-.revisar {
-    color: #00ff00;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 .finalizar-btn {
