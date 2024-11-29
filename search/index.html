@@ -70,6 +70,26 @@
             </div>
     `;
 
+    const products = `
+                <div class="product" onclick="window.parent.location.href='../product/index.html'">
+                <div class="product-image" style="background-image: url('../images/event-banner.png');"></div>
+                <div class="product-details">
+                    <h3 class="product-title">Copo com tirante</h3>
+                    <p class="product-seller">Florianópolis/SC • Atlética Crypto</p>
+                    <p class="product-price">R$ 35,00</p>
+                </div>
+                </div>
+
+                <div class="product" onclick="window.parent.location.href='../product/index.html'">
+                <div class="product-image" style="background-image: url('../images/event-banner.png');"></div>
+                <div class="product-details">
+                    <h3 class="product-title">Ceneca metálica com tirante</h3>
+                    <p class="product-seller">Florianópolis/SC • A5 Atlética</p>
+                    <p class="product-price">R$ 45,00</p>
+                </div>
+                </div>
+    `;
+
     init();
 
     function init() {
@@ -93,22 +113,7 @@
         if (tabName === 'Eventos') {
             mainContent.innerHTML = events
         } else if (tabName === 'Produtos') {
-            mainContent.innerHTML = `
-                <div class="product">
-                    <div class="product-image" style="background-image: url('produto1.jpg');"></div>
-                    <div class="product-details">
-                        <h3 class="product-title">Produto 1</h3>
-                        <p class="product-description">Descrição do Produto 1</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image" style="background-image: url('produto2.jpg');"></div>
-                    <div class="product-details">
-                        <h3 class="product-title">Produto 2</h3>
-                        <p class="product-description">Descrição do Produto 2</p>
-                    </div>
-                </div>
-            `;
+            mainContent.innerHTML = products;
         }
     }
 </script>
