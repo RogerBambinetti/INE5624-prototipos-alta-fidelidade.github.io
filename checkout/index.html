@@ -26,12 +26,12 @@
             <p class="info">Com pix é mais rápido!</p>
             <div class="radio-group">
                 <label>
-                    <input type="radio" name="payment" checked>
+                    <input type="radio" name="payment">
                     <span class="radio-custom"></span>
                     Pix
                 </label>
                 <label>
-                    <input type="radio" name="payment">
+                    <input type="radio" name="payment" checked>
                     <span class="radio-custom"></span>
                     Cartão de Crédito
                 </label>
@@ -42,6 +42,9 @@
             <h2>Parcelas</h2>
             <select>
                 <option>Selecione a parcela</option>
+                <option>1X</option>
+                <option>2X</option>
+                <option>3X</option>
             </select>
         </div>
 
@@ -58,9 +61,15 @@
             </label>
         </div>
 
-        <div class="card-holder">
-            <h2>Titular do Cartão</h2>
-            <p>Utilizamos o nome, CPF, data de nascimento...</p>
+        <div class="details">
+            <h3>Revisão</h3>
+
+            <p>Subtotal: R$ 75,00</p>
+            <p>Taxa de reembolso: R$ 5,00</p>
+
+            <div class="total">
+                <p>Total: R$ 80,00</p>
+            </div>
         </div>
 
         <button class="finalizar-btn" onclick="location.href='../home/index.html'">Finalizar Compra</button>
