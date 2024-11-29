@@ -83,13 +83,25 @@ header {
     display: flex;
     padding: 30px;
     font-size: 14px;
-    margin-bottom: 16px;
     align-items: center;
     justify-content: center;
 }
 
 .location img {
     width: 40px;
+}
+
+.options {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.options img {
+    width: 30px;
+    margin-right: 5px;
 }
 
 main {
