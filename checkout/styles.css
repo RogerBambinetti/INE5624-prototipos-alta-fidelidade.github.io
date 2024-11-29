@@ -52,6 +52,7 @@ h1 {
     border-bottom: 2px solid white;
 }
 
+.refund h2,
 .discount h2,
 .payment-methods h2,
 .installments h2,
@@ -91,6 +92,7 @@ h1 {
 }
 
 .installments select,
+.discount input,
 .card-info input {
     width: 100%;
     padding: 10px;
