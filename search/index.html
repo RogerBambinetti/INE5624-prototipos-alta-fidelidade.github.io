@@ -28,32 +28,7 @@
         </header>
 
         <main>
-            <div class="event" onclick="window.parent.location.href='../event/index.html'">
-                <div class="event-image" style="background-image: url('isoporzinho.jpg');"></div>
-                <div class="event-details">
-                    <p class="event-date">28 de Nov</p>
-                    <h3 class="event-title">Isoporzinho dos bichos</h3>
-                    <p class="event-location">Florianópolis/SC • Life Club</p>
-                </div>
-            </div>
 
-            <div class="event" onclick="window.parent.location.href='../event/index.html'">
-                <div class="event-image" style="background-image: url('casamento.jpg');"></div>
-                <div class="event-details">
-                    <p class="event-date">30 de Nov</p>
-                    <h3 class="event-title">CASAMENTO DA BIO 2024</h3>
-                    <p class="event-location">Florianópolis/SC • Life Club</p>
-                </div>
-            </div>
-
-            <div class="event" onclick="window.parent.location.href='../event/index.html'">
-                <div class="event-image" style="background-image: url('terraavista.jpg');"></div>
-                <div class="event-details">
-                    <p class="event-date">13 de Dez</p>
-                    <h3 class="event-title">TERRA À VISTA</h3>
-                    <p class="event-location">Florianópolis/SC • Life Club</p>
-                </div>
-            </div>
         </main>
     </div>
 
@@ -65,6 +40,43 @@
 </html>
 
 <script>
+
+    const events = `
+                <div class="event" onclick="window.parent.location.href='../event/index.html'">
+                <div class="event-image" style="background-image: url('../images/event-banner.png');"></div>
+                <div class="event-details">
+                    <p class="event-date">28 de Nov</p>
+                    <h3 class="event-title">Isoporzinho dos bichos</h3>
+                    <p class="event-location">Florianópolis/SC • Life Club</p>
+                </div>
+            </div>
+
+            <div class="event" onclick="window.parent.location.href='../event/index.html'">
+                <div class="event-image" style="background-image: url('../images/event-banner.png');"></div>
+                <div class="event-details">
+                    <p class="event-date">30 de Nov</p>
+                    <h3 class="event-title">CASAMENTO DA BIO 2024</h3>
+                    <p class="event-location">Florianópolis/SC • Life Club</p>
+                </div>
+            </div>
+
+            <div class="event" onclick="window.parent.location.href='../event/index.html'">
+                <div class="event-image" style="background-image: url('../images/event-banner.png');"></div>
+                <div class="event-details">
+                    <p class="event-date">13 de Dez</p>
+                    <h3 class="event-title">TERRA À VISTA</h3>
+                    <p class="event-location">Florianópolis/SC • Life Club</p>
+                </div>
+            </div>
+    `;
+
+    init();
+
+    function init() {
+        var mainContent = document.querySelector('main');
+        mainContent.innerHTML = events
+    }
+
     function setActiveTab(button) {
         var tabs = document.querySelectorAll('.tab');
         tabs.forEach(function (tab) {
@@ -79,32 +91,7 @@
         mainContent.innerHTML = '';
 
         if (tabName === 'Eventos') {
-            mainContent.innerHTML = `
-                <div class="event" onclick="window.parent.location.href='../event/index.html'">
-                    <div class="event-image" style="background-image: url('isoporzinho.jpg');"></div>
-                    <div class="event-details">
-                        <p class="event-date">28 de Nov</p>
-                        <h3 class="event-title">Isoporzinho dos bichos</h3>
-                        <p class="event-location">Florianópolis/SC • Life Club</p>
-                    </div>
-                </div>
-                <div class="event" onclick="window.parent.location.href='../event/index.html'">
-                    <div class="event-image" style="background-image: url('casamento.jpg');"></div>
-                    <div class="event-details">
-                        <p class="event-date">30 de Nov</p>
-                        <h3 class="event-title">CASAMENTO DA BIO 2024</h3>
-                        <p class="event-location">Florianópolis/SC • Life Club</p>
-                    </div>
-                </div>
-                <div class="event" onclick="window.parent.location.href='../event/index.html'">
-                    <div class="event-image" style="background-image: url('terraavista.jpg');"></div>
-                    <div class="event-details">
-                        <p class="event-date">13 de Dez</p>
-                        <h3 class="event-title">TERRA À VISTA</h3>
-                        <p class="event-location">Florianópolis/SC • Life Club</p>
-                    </div>
-                </div>
-            `;
+            mainContent.innerHTML = events
         } else if (tabName === 'Produtos') {
             mainContent.innerHTML = `
                 <div class="product">
