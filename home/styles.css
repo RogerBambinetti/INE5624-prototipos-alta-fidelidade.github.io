@@ -91,9 +91,8 @@ body {
 
 .location {
     display: flex;
-    padding: 30px;
+    padding: 20px;
     font-size: 14px;
-    margin-bottom: 16px;
     align-items: center;
     justify-content: center;
 }
